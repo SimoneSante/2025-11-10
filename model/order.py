@@ -10,9 +10,11 @@ class Order:
     shipped_date: datetime
     store_id: int
     staff_id: int
+    quantity: int
 
     def __hash__(self):
         return hash(self.order_id)
 
     def __str__(self):
         return f"{self.order_id}"
+
